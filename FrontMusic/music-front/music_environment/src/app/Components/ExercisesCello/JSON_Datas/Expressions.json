@@ -1,0 +1,17 @@
+{
+    "TecnicasCello":[
+        {"id": 1, "nome": "Pizzicato"},
+        {"id": 2, "nome": "Left Hand Technic"},
+        {"id": 3, "nome": "Col Legno"},
+        {"id": 4, "nome": "Extends technics"},
+        {"id": 5, "nome": "Expressions Technics"},
+        {"id": 6, "nome": "Bown"}
+    ],
+    "PautaCelo":[
+        {"id": 1, "nome": "Vibratto", "Description": "TRinaded line"},
+        {"id": 2, "nome": "Clave", "Description": "The Principal begin"},
+        {"id": 3, "nome": "Key Signature", "Description": "The initial of the Pauta"},
+        {"id": 4, "nome": "Five lines and the four spaces", "Description": "Whole Pauta form"},
+        {"id": 5, "nome": "Expression", "Description": "Make the TRansformation"}
+    ]
+}

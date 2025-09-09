@@ -1,0 +1,22 @@
+.CrudEnter{
+    background-color: 'yellow';
+    color: 'yellow';
+    width: '550px';
+    height: '700px';
+    text-align: 'center';
+    padding-top: '3px';
+    border-width: '5px';
+    border-color: 'cyan';
+    border-style: 'outset';
+    font-family: 'serif';
+    margin: '100px'
+  }
+  
+  .ArrowCuston{
+    padding-left: '50px';
+    padding-top: '10px'
+  }
+  
+  #secondDiv{
+    background-color: 'black';
+  }

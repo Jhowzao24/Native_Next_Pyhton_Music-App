@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .toggle-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .toggle-btn:focus {
+    outline: none;
+  }
+  
+  .card {
+    width: 150px;
+    height: 60px;
+    background-color: cyan;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%) translateX(-230%);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    padding: 20px;
+  }
+  
+  .card.show {
+    transform: translate(-50%, -70%) translateX(0); /* Mover o card da esquerda para a posição correta */
+    opacity: 1;
+  }
+  
+  .card h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #333;
+  }
