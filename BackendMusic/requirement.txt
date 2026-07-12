@@ -118,3 +118,4 @@ virtualenv==20.25.0
 watchdog==4.0.2
 Werkzeug==3.1.8
 wheel==0.45.1
+gunicorn
