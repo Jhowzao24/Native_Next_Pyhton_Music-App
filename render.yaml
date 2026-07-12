@@ -1,0 +1,46 @@
+services:
+  - type: web
+    name: music-backend
+    env: docker
+    dockerfilePath: BackendMusic/Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        value: "" # Ex: postgres://user:pass@host:5432/dbname
+      - key: SECRET_KEY
+        value: ""
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: EMAIL_HOST
+        value: ""
+      - key: EMAIL_HOST_USER
+        value: ""
+      - key: EMAIL_HOST_PASSWORD
+        value: ""
+  - type: web
+    name: music-frontend
+    env: docker
+    dockerfilePath: FrontMusic/music-front/music_environment/Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: "" # Ex: https://music-backend.onrender.com
+      - key: NODE_ENV
+        value: "production"
+
+jobs:
+  - name: music-backend-migrations
+    type: job
+    env: docker
+    dockerfilePath: BackendMusic/Dockerfile
+    # Cron schedule: daily at 03:00 UTC
+    schedule: "0 3 * * *"
+    command: |
+      bash -lc "python manage.py migrate --noinput && python manage.py collectstatic --noinput"
+    envVars:
+      - key: DATABASE_URL
+        value: ""
+      - key: SECRET_KEY
+        value: ""
+      - key: DJANGO_DEBUG
+        value: "False"
