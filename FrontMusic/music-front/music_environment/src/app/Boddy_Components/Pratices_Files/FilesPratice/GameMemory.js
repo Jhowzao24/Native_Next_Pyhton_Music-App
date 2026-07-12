@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 
 const images = [
@@ -36,7 +37,6 @@ export default function GameMemory() {
             <img style={{width: '500px', height: '250px'}} src={image.src} alt="instrument" className="selectedImage" />
           </div>
         );
-      } else {
         return (
           <div className="imageWrapper" key={image.id}>
             <img style={{width: '50px', height: '50px'}}

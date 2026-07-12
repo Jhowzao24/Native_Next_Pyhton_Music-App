@@ -1,12 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import React, { useEffect, useState, /*useRef*/ } from 'react';
 import Card from '@mui/material/Card';
 import { Alert, Box, Divider, Fab, Grid, Paper, Tooltip, Button } from '@mui/material';
 import AutoStoriesTwoToneIcon from '@mui/icons-material/AutoStoriesTwoTone';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import Moviment_6 from '../Phases_Components/Phase_Image/Moviment_6.jpg';
-import Left_Moviment from '../Phases_Components/Phase_Image/Left_Moviment.jpg';
 import QuizzQuinta from '../Avaliation_Files/Theory_Quizz/Quizz_Five_Phase';
 import { motion } from 'framer-motion';
+import Image from "next/image"
 
 export default function Cinco(){
     const [isOpen, setIsOpen] = useState(false);
@@ -89,10 +90,10 @@ function QuintaFase(){
                 <h3>Compound Solfege in 6 Moviments</h3>
                 <Divider/>
                 <Tooltip title={tulSolfege} arrow placement='right'>
-                    <img style={{width: '150px', height: '150px', borderStyle: 'double', borderColor: 'blue'}} src={Moviment_6} alt='movimentSolfege'/>
+                    <Image style={{width: '150px', height: '150px', borderStyle: 'double', borderColor: 'blue'}} src='/Moviment_6.jpg' alt='movimentSolfege'/>
                 </Tooltip>
                 <Tooltip title={reverseTitle} arrow placement='right'>
-                    <img style={{width: '150px', height: '150px', borderStyle: 'double', borderColor: 'dodgerblue'}} src={Left_Moviment} alt='movimentSolfege'/>
+                    <Image style={{width: '150px', height: '150px', borderStyle: 'double', borderColor: 'dodgerblue'}} src='/Left_Moviment.jpg' alt='movimentSolfege'/>
                 </Tooltip>
             </Card>
         </div>
@@ -247,7 +248,7 @@ function QuintaFase(){
                             <h3>Explanations</h3>
                             <Grid style={{margin: '20px'}}>
                             <Card style={{backgroundColor: 'dodgerblue', color: 'white'}}>
-                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermata's Duration 1</h4>
+                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermatas Duration 1</h4>
                                 <h4>{expla}</h4>
                             </Card>
                             </Grid>
@@ -255,7 +256,7 @@ function QuintaFase(){
                             <br/>
                             <Grid style={{margin: '20px'}}>
                             <Card style={{backgroundColor: 'blue', color: 'gold'}}>
-                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermata's Duration 2</h4>
+                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermatas Duration 2</h4>
                                 <h4>{explaF}</h4>
                             </Card>
                             </Grid>
@@ -263,7 +264,7 @@ function QuintaFase(){
                             <br/>
                             <Grid style={{margin: '20px'}}>
                             <Card style={{backgroundColor: 'orange', color: 'blue'}}>
-                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermata's Duration 3</h4>
+                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermatas Duration 3</h4>
                                 <h4>{explaT}</h4>
                             </Card>
                             </Grid>
@@ -271,7 +272,7 @@ function QuintaFase(){
                             <br/>
                             <Grid style={{margin: '20px'}}>
                             <Card style={{backgroundColor: 'gold', color: 'darkblue'}}>
-                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermata's Duration 4</h4>
+                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermatas Duration 4</h4>
                                 <h4>{explaFo}</h4>
                             </Card>
                             </Grid>
@@ -279,7 +280,7 @@ function QuintaFase(){
                             <br/>
                             <Grid style={{margin: '20px'}}>
                             <Card style={{backgroundColor: 'purple', color: 'yellow'}}>
-                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermata's Duration 5</h4>
+                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermatas Duration 5</h4>
                                 <h4>{explaFi}</h4>
                             </Card>
                             </Grid>
@@ -287,7 +288,7 @@ function QuintaFase(){
                             <br/>
                             <Grid style={{margin: '20px'}}>
                             <Card style={{backgroundColor: 'green', color: 'aqua'}}>
-                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermata's Duration 6</h4>
+                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermatas Duration 6</h4>
                                 <h4>{explaS}</h4>
                             </Card>
                             </Grid>
@@ -295,7 +296,7 @@ function QuintaFase(){
                             <br/>
                             <Grid style={{margin: '20px'}}>
                             <Card style={{backgroundColor: 'aqua', color: 'darkgreen'}}>
-                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermata's Duration 7</h4>
+                                <AutoStoriesTwoToneIcon style={{fontSize: '90px'}}/><h4>Fermatas Duration 7</h4>
                                 <h4>{explaSe}</h4>
                             </Card>
                             </Grid>

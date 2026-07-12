@@ -17,4 +17,4 @@ ENV PORT=8000
 # Coletar estáticos e migrar (será executado na build para garantir arquivos estáticos)
 RUN python manage.py collectstatic --noinput || true
 
-CMD ["gunicorn", "music_dj_project.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD gunicorn music_dj_project.wsgi:application --bind 0.0.0.0:$PORT

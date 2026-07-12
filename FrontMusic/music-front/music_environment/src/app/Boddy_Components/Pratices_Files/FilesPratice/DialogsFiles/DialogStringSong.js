@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import { Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
 import { Button } from 'evergreen-ui';
 import avatar from '../ImagesPratices/avatar.png';
 import StringsSong from '../../../Avaliation_Files/Pratice_Avaliations/ViolaTrivia';
+
 
 function DialogSongString() {
   const [open, setOpen] = useState(false);

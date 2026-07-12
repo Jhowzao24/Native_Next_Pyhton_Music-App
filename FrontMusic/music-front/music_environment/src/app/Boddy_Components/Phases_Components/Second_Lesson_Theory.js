@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import { Card, Paper, Button, Fab, Grid, Alert, Divider } from '@mui/material';
 import Popup from 'reactjs-popup';
-import Table_Notes from '../Phases_Components/Phase_Image/Table_Notes.png';
 import QuizzTwoPhase from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Two';
 import { Carousel } from 'antd';
 
@@ -71,7 +71,7 @@ function ModuleSecond(){
             <Popup trigger={<Fab style={{backgroundColor: 'darkgreen', color: 'cyan', fontFamily: 'fantasy'}}>Figures</Fab>}>
                 <h4>Opening...</h4>
                 {finishedTimeout && <Card style={{width: '400px', height: '400px'}}>
-                <img style={{width: '280px', height: '270px'}} src={Table_Notes} alt='notesTable'/><hr/>
+                <img style={{width: '280px', height: '270px'}} src='/Table_Notes.png' alt='notesTable'/><hr/>
                 <strong>Musical Notes:</strong><i>It is the figure that represent the sound</i><br/>
                 <strong>Musical Pauses:</strong><i>It is the figure that represent the silence</i>
                 </Card>}

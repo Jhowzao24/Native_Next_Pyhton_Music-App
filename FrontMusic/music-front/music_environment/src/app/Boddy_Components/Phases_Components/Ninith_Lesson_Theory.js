@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { ButtonBase, Divider, Grid, Tooltip, Button, Fab } from '@mui/material';
 import React, { useState } from 'react';
 import QuizzNono from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Nine';

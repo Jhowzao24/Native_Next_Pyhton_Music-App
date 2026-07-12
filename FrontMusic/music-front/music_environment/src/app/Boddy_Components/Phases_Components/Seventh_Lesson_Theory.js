@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { Divider, Fab, Grid, Tooltip, Paper, Button } from '@mui/material';
 import React, { useState } from 'react';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';

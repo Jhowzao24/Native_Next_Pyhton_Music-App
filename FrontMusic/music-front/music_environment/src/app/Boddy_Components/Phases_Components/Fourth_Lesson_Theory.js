@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ButtonBase, Card, Fab, Paper, CardActionArea, Grid, Button } from '@mui/material';
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
@@ -325,7 +326,7 @@ function QuartaFase(){
                                             </i>
                                         </i>
                                     </p>
-                                    <body>If you don't understand yet, lets check it out the examples:
+                                    <body>If you dont understand yet, lets check it out the examples:
                                         <p>
                                             <i>This is called: {Int_2}</i>
                                             <img src='https://th.bing.com/th/id/R.9b1a9f7a78509ad0673f91438c61fbb4?rik=OCsrYwM4VG7hhg&riu=http%3a%2f%2fmusicaeadoracao.com.br%2frecursos%2fimagens%2ftecnicos%2fteoria%2fteoria_online%2fintervalos_05g.gif&ehk=P%2ft7vtm%2fuHpwsVCj%2fLSCUrTf25tyVtooA2j%2bj79hNoA%3d&risl=&pid=ImgRaw&r=0' alt='2interval'/>
@@ -379,7 +380,7 @@ function QuartaFase(){
                                         like the last one we saw, this will count only the first and the
                                         third note, the note thatis in the middle, is nulled!!
                                         This tips of interval will be important at the instrument play!
-                                        By youwill jump notes at your instrument, and you'll be clear on what are you playing on it
+                                        By youwill jump notes at your instrument, and youll be clear on what are you playing on it
                                     </li>
                                 </ul>
                             </Paper>
@@ -398,7 +399,7 @@ function QuartaFase(){
                                         like the last one we saw, this will count only the first and the
                                         fourth note, the two notes that is in the middle, is nulled!!
                                         This tips of interval will be important at the instrument play!
-                                        SO, you will jump notes at your instrument, and you'll get clear on what are you playing on it
+                                        SO, you will jump notes at your instrument, and youll get clear on what are you playing on it
                                     </li>
                                 </ul>
                             </Paper>
@@ -429,7 +430,7 @@ function QuartaFase(){
                                         like the last one we saw, this will count also the first and the
                                         fifith note, the three notes that is in the middle, they will be nulled!!
                                         This tips of interval will be important at the instrument play!
-                                        By youwill jump notes at your instrument, and you'll be clear on what are you playing on it
+                                        By youwill jump notes at your instrument, and youll be clear on what are you playing on it
                                     </li>
                                 </ul>
                             </Paper>
@@ -448,7 +449,7 @@ function QuartaFase(){
                                         like the last one we saw, this will count only the first and the
                                         sixth note, the four notes that is in the middle, it will be nulled!!
                                         This tips of interval will be important at the instrument play!
-                                        By youwill jump notes at your instrument, and you'll be clear on what are you playing on it
+                                        By youwill jump notes at your instrument, and youll be clear on what are you playing on it
                                     </li>
                                 </ul>
                             </Paper>
@@ -467,7 +468,7 @@ function QuartaFase(){
                                         like the last one we saw, this will count only the first and the
                                         seventh note, the five notes that is in the middle, it will be nulled!!
                                         This tips of interval will be important at the instrument play!
-                                        As you will jump notes at your instrument, and you'll be clear on what are you playing on it
+                                        As you will jump notes at your instrument, and youll be clear on what are you playing on it
                                     </li>
                                 </ul>
                             </Paper>

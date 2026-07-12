@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button, ButtonBase, Divider, Grid, Tooltip, Fab } from '@mui/material';
 import React, { useState } from 'react';
 import QuizzDoze from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Twoelve';

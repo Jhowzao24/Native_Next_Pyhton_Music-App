@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { Button, Divider, Grid, Paper, Tooltip, Fab } from '@mui/material';
 import React, { useState } from 'react';
-import intensit from '../Phases_Components/Phase_Image/intensit.png';
 import Popup from 'reactjs-popup';
 import QuizzDez from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Ten';
 
@@ -55,12 +56,12 @@ export default function DecimaFase(){
 function FaseDez(){
     const tip1 = [
         <div>
-            <img style={{width: '450px', height: '300px'}} src={intensit} alt='intensidade'/>
+            <img style={{width: '450px', height: '300px'}} src='/intensit.png' alt='intensidade'/>
         </div>
     ]
     const signalInt = [
         <div>
-            <p>When the signal of increassing and decreassing do not have a dinamic espacificate, the interpreter must to grow up only a level or only down a level. By example, if it be sounding <i>"mp"</i>, and appear a signal of increassing, it must to climb to <i>"mf"</i>, and not to <i>"ff"</i> or <i>"fff"</i>. The dinamic is gradual</p>
+            <p>When the signal of increassing and decreassing do not have a dinamic espacificate, the interpreter must to grow up only a level or only down a level. By example, if it be sounding <i>mp</i>, and appear a signal of increassing, it must to climb to <i>mf</i>, and not to <i>ff</i> or <i>fff</i>. The dinamic is gradual</p>
             <img src='https://th.bing.com/th/id/R.9fb26b37a4786e6e374314673d2e69a3?rik=615VuyO5jUFGRQ&pid=ImgRaw&r=0' alt='sinalIndicate'/>
         </div>
     ]

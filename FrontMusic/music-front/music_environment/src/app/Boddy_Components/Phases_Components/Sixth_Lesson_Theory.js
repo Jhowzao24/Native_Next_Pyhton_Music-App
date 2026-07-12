@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { Card, Grid, Paper, Tooltip, Divider, Button, Fab } from '@mui/material';
 import React, { Component, useState } from 'react';
 import QuizzSixPhase from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Six';

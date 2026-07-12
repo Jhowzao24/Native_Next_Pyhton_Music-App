@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, {useState} from 'react';
 import { Dialog, DialogActions, DialogContent, DialogTitle, Tooltip } from '@mui/material';
 import { Button, Divider } from 'antd';

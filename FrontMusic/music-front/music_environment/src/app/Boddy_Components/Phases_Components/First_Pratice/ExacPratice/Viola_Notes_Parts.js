@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Modal, Box, Button, Paper, Grid, Divider, Fab, Card, CardMedia, StepLabel, Tooltip, CardActionArea } from '@mui/material';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
@@ -98,7 +99,7 @@ export default function ViolaPratice(){
                         </Fab>
                     </CardMedia>
                     <Grid style={{paddingLeft: '750px'}} container spacing={12}>
-                        <StepLabel>Note's Positions</StepLabel>
+                        <StepLabel>Notes Positions</StepLabel>
                     </Grid>
                     <Grid style={{paddingLeft: '700px', paddingTop: '30px'}} container spacing={0}>
                     <CardActionArea>
@@ -107,12 +108,12 @@ export default function ViolaPratice(){
                                 <Card style={{width: '500px', height: '800px'}}>
                                     <Grid>
                                     <Tooltip title='hello again'>
-                                        <p style={{backgroundColor: 'blue', color: 'gold', fontSize: '15px'}}>The Viola's Strings</p>
+                                        <p style={{backgroundColor: 'blue', color: 'gold', fontSize: '15px'}}>The Violas Strings</p>
                                     </Tooltip>
                                     </Grid>
                                     <Divider/>
                                     <Paper style={{fontSize: '10px'}}>
-                                        First of all we need to understand, lets see all the yellow notes! It will represent the free strings at the viola! The next one notes after the yellow notes will be the played notes atthe Viola's mirror!
+                                        First of all we need to understand, lets see all the yellow notes! It will represent the free strings at the viola! The next one notes after the yellow notes will be the played notes atthe Violas mirror!
                                     </Paper>
                                     <Divider/>
                                     <Grid style={{paddingLeft: '50px'}}>
@@ -703,7 +704,7 @@ export default function ViolaPratice(){
                                     </Grid>
                                     <Grid style={{paddingLeft: '280px', paddingTop: '80px'}} container spacing={0}>
                                         <Tooltip title='This all area is the natural notes at the violin tonality, as you can to see, this tonality is a 6nd tom under the Viola Tons'>
-                                            <Button onClick={click1} style={{backgroundColor: 'Highlight', color: 'white', width: '150px'}}><ArrowLeftIcon/>Violin's Tonality</Button>
+                                            <Button onClick={click1} style={{backgroundColor: 'Highlight', color: 'white', width: '150px'}}><ArrowLeftIcon/>Violins Tonality</Button>
                                         </Tooltip>
                                     </Grid>
                                     <Grid style={{paddingLeft: '80px'}} container spacing={13}>

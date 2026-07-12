@@ -1,11 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import React, { useEffect, useState } from 'react';
 import { Button, Paper, Grid, Alert, Card, Fab, Tooltip } from '@mui/material';
 import Popup from 'reactjs-popup';
-import Timbre from '../Phases_Components/Phase_Image/Timbre.jpg';
-import duration from '../Phases_Components/Phase_Image/duration.jpeg';
-import AltSound from '../Phases_Components/Phase_Image/AltSound.gif';
-import intensit from '../Phases_Components/Phase_Image/intensit.png';
-import giphyViolin from '../Phases_Components/Phase_Image/giphyViolin.gif';
 import QuizzOneTime from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_One';
 import { motion } from 'framer-motion';
 import NotesExercise from './PautaExercise/LineLessonPauta';
@@ -112,7 +109,7 @@ const dataMusic = [
     }
   ]
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+ 
 
 
 export default function FirstComp(){
@@ -477,9 +474,9 @@ export function StudyFirst(){
                     <div style={{paddingLeft: '100px', float: 'left'}}>
                     <Popup trigger={<Button style={{backgroundColor: 'aqua', color: 'midnightblue', fontFamily: 'fantasy'}}>Timbre</Button>}>
                         <Card style={{margin: '-10px', backgroundColor: 'gold', width: '650px'}}>
-                            <img style={{width: '100px', height: '100px'}} src={Timbre} alt='timbre'/>
+                            <img style={{width: '100px', height: '100px'}} src='/Timbre.jpg' alt='timbre'/>
                             <i>It is the distinction of producted sounds by different sonorous fonts!<br/>
-                            being on the same height and intensity; It's thecolor of sound</i>
+                            being on the same height and intensity; Its thecolor of sound</i>
                             <Card style={{width: '500px', backgroundColor: 'Highlight', color: 'gold'}}><ul>We can indentify distincts sounds of others</ul>
                                 <ul>By example: We can to indentify a sound that is play by violin, and distinct others
                                     different sounds that is played by other instruments, by thisproperty we candifferency the sounds
@@ -491,7 +488,7 @@ export function StudyFirst(){
                     <div style={{paddingRight: '150px', float: 'right'}}>
                     <Popup trigger={<Button style={{backgroundColor: 'aqua', color: 'midnightblue', fontFamily: 'fantasy'}}>Duration</Button>}>
                         <Card style={{margin: '-10px', backgroundColor: 'cyan'}}>
-                        <img style={{width: '100px', height: '100px'}} src={duration} alt='duracao'/>
+                        <img style={{width: '100px', height: '100px'}} src='/duration.jpeg' alt='duracao'/>
                         <i>It is the sustentation of sound in a determined space of time</i>
                         <ul>This will determine if the sound is SHORT or LONG</ul>
                         </Card>
@@ -500,9 +497,9 @@ export function StudyFirst(){
                     <div style={{paddingRight: '160px', float: 'right'}}>
                     <Popup trigger={<Fab style={{backgroundColor: 'aqua', color: 'midnightblue', fontFamily: 'fantasy'}}>Height</Fab>}>
                         <Card style={{width: '350px', backgroundColor: 'blueviolet', color: 'gold', fontFamily: 'serif', fontSize: '20px'}}>
-                            <img style={{width: '100px', height: '200px', borderRadius: '100px'}} src={AltSound} alt='alturaH'/>
+                            <img style={{width: '100px', height: '200px', borderRadius: '100px'}} src='/AltSound.gif' alt='alturaH'/>
                             <i>It is the properties of waves sounds frequences that permited us to distinct between some
-                                sounds, ("Bass, Medium, High-pitched"), How much minor is the sounds frequence,
+                                sounds, (Bass, Medium, High-pitched), How much minor is the sounds frequence,
                                 more bass is this sound. How much greatter the frequence, more High-pitched is the sound
                             </i>
                         </Card>
@@ -514,7 +511,7 @@ export function StudyFirst(){
                             <i>This will help you to distinct the different of weak sounds and the strong sounds</i>
                             <p>Look this two examples below</p>
                             <ul>
-                                <img style={{width: '200px', height: '200px'}} src={intensit} alt='sons'/>
+                                <img style={{width: '200px', height: '200px'}} src='/intensit.png' alt='sons'/>
                             </ul>
                             <p>As you can look it, the width and the amplitud, how much more width is puted
                                 the sound is gonna be weak, and the other way, the sound will turn to
@@ -536,7 +533,7 @@ export function StudyFirst(){
                     <Card style={{float: 'right', width: '500px', height: '500px', paddingBotton: '20px'}}>
                         <h3>This is the start of the whole knowledge that you must to learn</h3>
                         <hr style={{borderColor: 'Highlight'}}/>
-                        <img style={{height: '300px'}} src={giphyViolin} alt='violinogif'/>
+                        <img style={{height: '300px'}} src='/giphyViol/n.gif' alt='violinogif'/>
                     </Card>
                 </Button>
                 </div>

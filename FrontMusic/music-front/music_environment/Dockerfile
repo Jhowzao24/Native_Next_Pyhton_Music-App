@@ -15,4 +15,4 @@ ENV PORT=3000
 EXPOSE 3000
 
 # Usar next start em modo produção
-CMD ["npm", "run", "start"]
+CMD npm run start -- -p $PORT

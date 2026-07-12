@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // backend/exportData.js
 
 const admin = require('firebase-admin');

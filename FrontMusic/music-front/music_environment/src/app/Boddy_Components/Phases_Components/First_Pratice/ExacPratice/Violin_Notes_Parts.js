@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Paper, Modal, Box, Button, Grid, Divider, Fab, Card, StepLabel, Tooltip } from '@mui/material';
 import React from 'react';
 import BackspaceIcon from '@mui/icons-material/Backspace';
@@ -119,7 +120,7 @@ export default function ViolinPratice(){
                             </summary>
                                 <Card style={{width: '900px', height: '600px'}}>
                                     <Grid>
-                                        <Paper style={{color: 'gold', backgroundColor: 'Highlight', fontFamily: 'fantasy', letterSpacing: '7px', height: '30px', fontSize: '20px'}}>Notes's Positions Natural</Paper>
+                                        <Paper style={{color: 'gold', backgroundColor: 'Highlight', fontFamily: 'fantasy', letterSpacing: '7px', height: '30px', fontSize: '20px'}}>Notesss Positions Natural</Paper>
                                     </Grid><br/>
                                     <Divider/><br/>
                                     <Grid>

@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { Button, Input, Card, Tooltip } from 'antd';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
@@ -34,7 +36,6 @@ const ViolinFingeringTrainer = () => {
       userSelect: 'none', /* Evita seleção de texto ao arrastar */
     }
   }
-  // eslint-disable-next-line no-use-before-define
   const [fingering, setFingering] = useState([]);
   const [figureEnd, setFigureEnd] = useState([]);
   const [currentNote, setCurrentNote] = useState('');

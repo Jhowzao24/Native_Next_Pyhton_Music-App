@@ -34,7 +34,6 @@ function SpaceNotes(){
 }
 
 const NotesExercise = () => {
-  // eslint-disable-next-line no-unused-vars
   const [notes, setNotes] = useState(['Rhythm', 'Melody', 'Harmony']);
   const [currentNoteIndex, setCurrentNoteIndex] = useState(0);
   const [score, setScore] = useState(0);

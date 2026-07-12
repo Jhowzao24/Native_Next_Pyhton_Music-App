@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import React from 'react';
 import { ContiVioloinLesson, Diver } from './style';
 import { Card, Grid, Tooltip } from '@mui/material';

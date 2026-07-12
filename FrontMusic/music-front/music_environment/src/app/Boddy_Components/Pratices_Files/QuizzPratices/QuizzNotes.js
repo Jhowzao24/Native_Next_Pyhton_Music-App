@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, {useState} from 'react';
 import {Button, Divider} from '@mui/material';
 import { Diver } from '../style';

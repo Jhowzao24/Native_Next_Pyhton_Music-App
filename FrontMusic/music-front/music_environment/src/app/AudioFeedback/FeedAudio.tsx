@@ -8,7 +8,7 @@ interface Feedback {
   id: number;
   message: string;
   timestamp: string;
-  analysis?: string;
+  analysis: React.JSX.Element;
 }
 
 const HomePage: React.FC = () => {
@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
   const [audioChunks, setAudioChunks] = useState<BlobPart[]>([]);
 
   // Salvar feedback no backend
-  const saveFeedback = async (feedback: Feedback) => {
+  const saveFeedback = async (feedback: Omit<Feedback, "id">) => {
     try {
       await fetch("http://localhost:8000/feedback/", {
         method: "POST",
@@ -41,7 +41,13 @@ const HomePage: React.FC = () => {
     try {
       const response = await fetch("http://localhost:8000/feedback/");
       const data: Feedback[] = await response.json();
-      addFeedback([...data]); // Adiciona todos os feedbacks de uma vez
+      data.forEach(feedback => {
+        addFeedback({
+          message: feedback.message,
+          timestamp: feedback.timestamp,
+          analysis: <span>{feedback.analysis}</span>
+        });
+      });
     } catch (error) {
       console.error("Erro ao buscar feedbacks do backend:", error);
     }
@@ -82,11 +88,10 @@ const HomePage: React.FC = () => {
         // Analisar áudio antes de salvar
         const analysis = await analyzeAudio(audioBlob);
 
-        const newFeedback: Feedback = {
-          id: Date.now(),
+        const newFeedback = {
           message: "Gravação de áudio concluída.",
           timestamp: new Date().toLocaleString(),
-          analysis,
+          analysis: <span>{analysis}</span>,
         };
 
         addFeedback(newFeedback);
@@ -180,9 +185,7 @@ const HomePage: React.FC = () => {
               <div>
                 <p><strong>Mensagem:</strong> {feedback.message}</p>
                 <small>{feedback.timestamp}</small>
-                {feedback.analysis && (
-                  <p><strong>Análise:</strong> {feedback.analysis}</p>
-                )}
+                <p><strong>Análise:</strong> {feedback.analysis}</p>
               </div>
               <Button
                 onClick={() => removeFeedback(feedback.id)}

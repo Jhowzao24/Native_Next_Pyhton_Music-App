@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+*.sqlite3
+*.env
+.env.*
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+BackendMusic/djangovenvMusic/
+venv/
+env/
+.venv/
+
+# Django
+staticfiles/
+media/
+
+# Node / Next
+FrontMusic/music-front/music_environment/node_modules/
+FrontMusic/music-front/music_environment/.next/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# VS Code
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store

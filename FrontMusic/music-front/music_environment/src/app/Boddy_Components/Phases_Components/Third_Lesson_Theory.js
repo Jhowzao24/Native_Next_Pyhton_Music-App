@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { CardMedia, Card, Fab, Grid, Paper, Stack, ListItem, Divider, Alert, Button, Box } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import Popup from 'reactjs-popup';

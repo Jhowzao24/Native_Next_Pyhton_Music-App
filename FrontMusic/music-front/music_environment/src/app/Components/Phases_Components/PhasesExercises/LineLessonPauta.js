@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
-import React, {useState} from 'react';
+import React, {useState, } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
+
 
 function SpaceNotes(){
   const [notes] = useState(['Timbre', 'Intensity', 'Duration', 'Height']);

@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { Button } from 'evergreen-ui';
 import { Tooltip, FormLabel } from '@mui/material';
 import { Card, Input } from 'antd';

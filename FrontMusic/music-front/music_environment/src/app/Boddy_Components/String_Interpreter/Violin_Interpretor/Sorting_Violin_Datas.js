@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import { Button, Input, Tooltip } from 'antd';
 import { useTable, useSortBy, useFilters } from 'react-table';
@@ -29,7 +30,7 @@ const EditableCellViolin = ({
     Cell: EditableCellViolin,
   };
 
-  const DataTable = ({ columns, data, updateData, removeData }) => {
+  const DataTable = ({ columns, data, updateData, /*removeData*/ }) => {
     const {
       getTableProps,
       getTableBodyProps,

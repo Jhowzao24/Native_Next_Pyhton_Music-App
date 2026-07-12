@@ -1,4 +1,5 @@
-/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable @next/next/no-img-element */
+
 import React, {Component} from 'react';
 import { Card, Grid, Paper, Button, Fab, Divider, AccordionDetails, Typography, FormLabel, Input, Accordion, AccordionSummary } from '@mui/material';
 import Popup from 'reactjs-popup';
@@ -36,7 +37,7 @@ function Viola_Player(){
                                     </Popup>
                                 </Grid>
                                 <Grid style={{paddingLeft: '520px'}} container spacing={60}>
-                                    <Popup trigger={<Fab style={{fontSize: '10px', width: '100px', height: '50px'}}>Violin's Arm<ArrowRightAltIcon style={{color: 'Highlight', fontSize: '15px', float: 'right'}}/></Fab>}>
+                                    <Popup trigger={<Fab style={{fontSize: '10px', width: '100px', height: '50px'}}>Violins Arm<ArrowRightAltIcon style={{color: 'Highlight', fontSize: '15px', float: 'right'}}/></Fab>}>
                                         <Card style={{width: '360px', height: '90px'}}>
                                             <h2 style={{fontSize: '15px'}}><strong>Arm</strong></h2>
                                             <i>This part is the part that you will put your thumb to support</i>
@@ -47,7 +48,7 @@ function Viola_Player(){
                                     <Popup trigger={<Fab style={{fontSize: '10px', width: '100px', height: '50px'}}>Rear Top<ArrowRightAltIcon style={{color: 'Highlight', fontSize: '15px', float: 'right'}}/></Fab>}>
                                         <Card style={{width: '360px', height: '90px'}}>
                                             <h2 style={{fontSize: '15px'}}><strong>Rear Top</strong></h2>
-                                            <i>This part is the back of the violin, so his function is to receive the vibration from the Violin's Soul</i>
+                                            <i>This part is the back of the violin, so his function is to receive the vibration from the Violins Soul</i>
                                         </Card>
                                     </Popup>
                                 </Grid>
@@ -55,7 +56,7 @@ function Viola_Player(){
                                     <Popup trigger={<Fab style={{fontSize: '10px', width: '100px', height: '50px'}}>Harpsichords(Cravelhas)<ArrowRightAltIcon style={{color: 'Highlight', fontSize: '15px', float: 'right'}}/></Fab>}>
                                         <Card style={{width: '360px', height: '90px'}}>
                                             <h2 style={{fontSize: '15px'}}><strong>Harpsichords(Cravelhas)</strong></h2>
-                                            <i>This part is use to affinated the Violin's strings at the superior point</i>
+                                            <i>This part is use to affinated the Violins strings at the superior point</i>
                                         </Card>
                                     </Popup>
                                 </Grid>
@@ -92,16 +93,16 @@ function Viola_Player(){
                                         <Card style={{width: '160px', height: '300px'}}>
                                             <h2 style={{fontSize: '15px'}}><strong>Front Top</strong></h2>
                                             <i>Important part</i><Divider/>
-                                            <p>It will receive more vibrations from the violin's soul, if you never knew this, stay knowing, the sound in the violin, will be reflected from de soul, and it will be distributed for the two tops</p>
+                                            <p>It will receive more vibrations from the violins soul, if you never knew this, stay knowing, the sound in the violin, will be reflected from de soul, and it will be distributed for the two tops</p>
                                         </Card>
                                     </Popup>
                                 </Grid>
                                 <Grid style={{paddingLeft: '530px'}} container spacing={30}>
-                                    <Popup trigger={<Fab style={{fontSize: '12px', width: '100px', height: '50px'}}>Violin's F<ArrowRightAltIcon style={{color: 'Highlight', fontSize: '20px', float: 'left'}}/></Fab>}>
+                                    <Popup trigger={<Fab style={{fontSize: '12px', width: '100px', height: '50px'}}>Violins F<ArrowRightAltIcon style={{color: 'Highlight', fontSize: '20px', float: 'left'}}/></Fab>}>
                                         <Card style={{width: '160px', height: '300px'}}>
                                             <h2 style={{fontSize: '15px'}}><strong>Fs</strong></h2>
                                             <i>This two formates is the more important piece at the instrument</i><Divider/>
-                                            <p>Because this two F pieces will be the exit of the sound's air, at the case, if this two pieces didn't exist there, the sounds would not exit</p>
+                                            <p>Because this two F pieces will be the exit of the sounds air, at the case, if this two pieces didnt exist there, the sounds would not exit</p>
                                         </Card>
                                     </Popup>
                                 </Grid>
@@ -109,8 +110,8 @@ function Viola_Player(){
                                     <Popup trigger={<Fab style={{fontSize: '12px', width: '100px', height: '50px'}}><ArrowLeftIcon style={{color: 'Highlight', fontSize: '20px', float: 'left'}}/>Easel</Fab>}>
                                         <Card style={{width: '160px', height: '300px'}}>
                                             <h2 style={{fontSize: '15px'}}><strong>Easel</strong></h2>
-                                            <i>So, all you have been saw until here, receive vibration's sounds!</i><Divider/>
-                                            <p>But this instrument's piece is the first piece that will receive the all strongs vibration's sounds from the strings</p>
+                                            <i>So, all you have been saw until here, receive vibrations sounds!</i><Divider/>
+                                            <p>But this instruments piece is the first piece that will receive the all strongs vibrations sounds from the strings</p>
                                         </Card>
                                     </Popup>
                                 </Grid>

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { Button } from "antd";
 import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";

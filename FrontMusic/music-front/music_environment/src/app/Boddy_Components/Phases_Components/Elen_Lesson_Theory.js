@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { Divider, Tooltip, Button, Grid, Fab, Paper } from '@mui/material';
 import React, {useState} from 'react';
 import QuizzOnze from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Eleven';
@@ -95,7 +97,7 @@ function FaseOnze(){
             >
                 <h3>Ever what we talk, we use formed words by a lot of syllables. These words have strong accentuations in only one syllable, while the others syllables have one weak accentuation!</h3>
                 <Divider/>
-                <h3>By example, when we say the word "to lead", we do not say con-DU-zir; instead it, we say, con-du-ZIR, with the acentuation strongest at the thirth syllable</h3>
+                <h3>By example, when we say the word to lead, we do not say con-DU-zir; instead it, we say, con-du-ZIR, with the acentuation strongest at the thirth syllable</h3>
             </motion.div>
         </div>
     ]

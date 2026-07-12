@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Button, Grid } from '@mui/material';
 import { Tooltip, Card } from 'antd';

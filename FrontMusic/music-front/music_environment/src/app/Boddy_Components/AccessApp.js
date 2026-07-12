@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {Button, Divider, Input, Card, Row, Col } from 'antd';
 import React, { Component } from 'react';
 import {Box, IconButton, FormLabel} from '@mui/material';

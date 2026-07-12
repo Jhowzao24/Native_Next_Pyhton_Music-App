@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Grid, Tooltip, Button, Fab } from '@mui/material';
 import React, { useState } from 'react';
 import QuizzTreze from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Thirteen';

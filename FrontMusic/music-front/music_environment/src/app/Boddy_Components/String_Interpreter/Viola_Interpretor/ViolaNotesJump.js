@@ -1,5 +1,5 @@
 import { Button, Divider, Tooltip } from 'antd';
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { Toaster, toast } from 'react-hot-toast';
 
 export default function ViolaJumpNotes(){
@@ -226,9 +226,8 @@ export default function ViolaJumpNotes(){
     -------------------------------------------------------------------------
     -------------------------------------------------------------------------
     -------------------------------------------------------------------------*/
-    const [queue, setQueue] = useState(['DÓ', 'RÉ', 'MI', 'FÁ', 'SOL', 'LÁ']);
-    useEffect(() => {
-        // eslint-disable-next-line no-unused-vars
+    const [queue, /*setQueue*/] = useState(['DÓ', 'RÉ', 'MI', 'FÁ', 'SOL', 'LÁ']);
+    /*useEffect(() => {
         const interval = setInterval(() => {
             setQueue(prevQueue => {
                 const newQueue = [...prevQueue];
@@ -238,7 +237,7 @@ export default function ViolaJumpNotes(){
             });
         }, 5000);
         return() => clearInterval;
-        },[]);
+        },[]);*/
         return(
             <div>
                 <h2>Memorize exercise!</h2>
@@ -280,7 +279,7 @@ export default function ViolaJumpNotes(){
                             <h1>Playing at Viola strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the first finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the first finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -328,7 +327,7 @@ export default function ViolaJumpNotes(){
                             <h1>Playing at Viola strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the second finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the second finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -377,7 +376,7 @@ export default function ViolaJumpNotes(){
                             <h1>Playing at Viola strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the third finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the third finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -426,7 +425,7 @@ export default function ViolaJumpNotes(){
                             <h1>Playing at Viola strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the fourth finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the fourth finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>

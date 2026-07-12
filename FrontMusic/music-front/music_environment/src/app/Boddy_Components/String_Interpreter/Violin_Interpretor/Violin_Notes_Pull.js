@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable @next/next/no-img-element */
 import { Button, Divider, Tooltip } from 'antd';
 import React, {useEffect, useState} from 'react';
 import { Grid, Card } from '@mui/material';
@@ -189,7 +191,7 @@ function PositionChange(){
             <Card style={{letterSpacing: '3px', color: 'Highlight', fontFamily: 'serif'}}>
                 <h3>So... The String LÁ at the violin has a different height from the string RÉ</h3><br/>
                 <h3>But the model to play is almost equal that the string RÉ!</h3>
-                <h3>Let's start to learn the 1º position on the string LÁ!</h3>
+                <h3>Lets start to learn the 1º position on the string LÁ!</h3>
             </Card>
             <details><summary style={{backgroundColor: 'cyan'}}>String LÁ</summary>
             <h2 style={{backgroundColor: 'lightblue'}}>As you know, the violin has other different heights of sound, that it need some position changes!</h2>
@@ -228,7 +230,7 @@ function PositionChange(){
             <Card style={{letterSpacing: '3px', color: 'Highlight', fontFamily: 'serif'}}>
                 <h3>So... The String MI at the violin has a different height from the string RÉ, LÁ together it!</h3><br/>
                 <h3>But the model to play it is not equal that the string RÉ and LÁ!</h3>
-                <h3>Let's start to learn the 1º position on the string MI!</h3>
+                <h3>Lets start to learn the 1º position on the string MI!</h3>
             </Card>
             <details><summary style={{backgroundColor: 'cyan'}}>String Mi</summary>
             <h2 style={{backgroundColor: 'lightblue'}}>As you know, the violin has other different heights of sound, that it need some position changes!</h2>
@@ -267,7 +269,7 @@ function PositionChange(){
             <Card style={{letterSpacing: '3px', color: 'Highlight', fontFamily: 'serif'}}>
                 <h3>So... The String SOL at the violin has a different height from the string RÉ, LÁ and MI</h3><br/>
                 <h3>But the model to play is almost equal that the string RÉ, LÁ and MI!</h3>
-                <h3>Let's start to learn the 1º position on the string SOL!</h3>
+                <h3>Lets start to learn the 1º position on the string SOL!</h3>
             </Card>
             <details><summary style={{backgroundColor: 'cyan'}}>String SOL</summary>
             <h2 style={{backgroundColor: 'lightblue'}}>As you know, the violin has other different heights of sound, that it need some position changes!</h2>
@@ -533,17 +535,16 @@ export default function ViolinJumperNotas(){
     -------------------------------------------------------------------------
     -------------------------------------------------------------------------
     -------------------------------------------------------------------------*/
-    const [queue, setQueue] = useState(['DÓ', 'RÉ', 'MI', 'FÁ', 'SOL', 'LÁ']);
+    const [queue, /*setQueue*/] = useState(['DÓ', 'RÉ', 'MI', 'FÁ', 'SOL', 'LÁ']);
     useEffect(() => {
-        // eslint-disable-next-line no-unused-vars
-        const interval = setInterval(() => {
+        /*const interval = setInterval(() => {
             setQueue(prevQueue => {
                 const newQueue = [...prevQueue];
                 const firstElement = newQueue.shift();
                 newQueue.push(firstElement);
                 return newQueue;
             });
-        }, 5000);
+        }, 5000);*/
         return() => clearInterval;
         },[]);
         return(
@@ -585,7 +586,7 @@ export default function ViolinJumperNotas(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the first finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the first finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -634,7 +635,7 @@ export default function ViolinJumperNotas(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the second finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the second finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -684,7 +685,7 @@ export default function ViolinJumperNotas(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the third finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the third finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -734,7 +735,7 @@ export default function ViolinJumperNotas(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the fourth finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the fourth finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>

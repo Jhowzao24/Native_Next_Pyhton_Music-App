@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-key */
 import { Divider, Grid, Tooltip, Button, Paper, Fab } from '@mui/material';
 import React, {useState} from 'react';
 import QuizzDesesseis from '../Avaliation_Files/Theory_Quizz/Quizz_Phase_Sixteen';
@@ -231,7 +233,7 @@ function FaseDesesseis(){
                 <h4 style={{margin: '20px'}}>The <strong>Musical Interpretation</strong> is the art of compreender the intenptions and the feelings of the composer and transmit it through the sound from the instrument. <strong>It is the Musical Expression</strong></h4>
                 <br/>
                 <ul>
-                    <h5>The interpretation take in consideration the intensity of sound, the execution form of this sound, the speed, etc. The intepretation <strong>doesn't take in consideration</strong> the formula of compasso.</h5>
+                    <h5>The interpretation take in consideration the intensity of sound, the execution form of this sound, the speed, etc. The intepretation <strong>doesn&apos;t take in consideration</strong> the formula of compasso.</h5>
                     <h5>Asyou see a music with a formule like 2/4, it will not must to be executed fast or with a strong intensity of sound</h5>
                     <hr/>
                     <Paper>

@@ -44,7 +44,7 @@ const Login_CRUD: React.FC = () => {
           // Limpar os campos do formulário após a criação bem-sucedida
           setCreateInput({ UserName: '', Password: ''});
           toast.success("Datas inserted on success!!")
-        } catch (error) {
+        } catch {
           toast.error("Error on colleted the datas ...");
         }
         setContent('login');

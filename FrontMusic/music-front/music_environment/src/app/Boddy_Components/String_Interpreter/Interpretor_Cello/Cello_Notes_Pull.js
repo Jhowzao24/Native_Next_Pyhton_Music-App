@@ -226,10 +226,9 @@ export default function AutoMoveQueue(){
     -------------------------------------------------------------------------
     -------------------------------------------------------------------------
     -------------------------------------------------------------------------*/
-    const [queue, setQueue] = useState(['DÓ', 'RÉ', 'MI', 'FÁ', 'SOL', 'LÁ']);
+    const [queue, /*setQueue*/] = useState(['DÓ', 'RÉ', 'MI', 'FÁ', 'SOL', 'LÁ']);
     useEffect(() => {
-        // eslint-disable-next-line no-unused-vars
-        const interval = setInterval(() => {
+        /*const interval = setInterval(() => {
             setQueue(prevQueue => {
                 const newQueue = [...prevQueue];
                 const firstElement = newQueue.shift();
@@ -237,9 +236,10 @@ export default function AutoMoveQueue(){
                 return newQueue;
             });
         }, 5000);
-        return() => clearInterval;
-        },[]);
-        return(
+        return() => clearInterval(interval);*/
+    }, []);
+    
+    return(
             <div>
                 <h2>Memorize exercise!</h2>
                 <Tooltip title='This exercise you will must have to cognize the right sequence and you will check it in your mind and after you will say the sequence in your mouth!'>
@@ -280,7 +280,7 @@ export default function AutoMoveQueue(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the first finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the first finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -328,7 +328,7 @@ export default function AutoMoveQueue(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the second finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the second finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -377,7 +377,7 @@ export default function AutoMoveQueue(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the third finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the third finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -426,7 +426,7 @@ export default function AutoMoveQueue(){
                             <h1>Playing at cello strings!</h1>
                             <br/>
                             <h3>First of all you must to learn about the fingers you have to touch</h3>
-                            <h3>Let's play all the strings with the fourth finger! And discovery what notes this will take!!</h3>
+                            <h3>Lets play all the strings with the fourth finger! And discovery what notes this will take!!</h3>
                             <Tooltip title='If you are in doubt with on where to put the finger, go to the instrument and find the DÓ string!'>
                                 <h3 style={{fotnFamily: 'serif', fontSize: '15px'}}>Doubts(?)</h3>
                             </Tooltip>
@@ -479,4 +479,4 @@ export default function AutoMoveQueue(){
                 </div>
             </div>
         )
-}
+    }

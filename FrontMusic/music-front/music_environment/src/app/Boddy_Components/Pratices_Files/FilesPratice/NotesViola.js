@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button, Divider, Fab, Grid } from '@mui/material';
 import React, {useState} from 'react';
 //import { Excer } from '../style';

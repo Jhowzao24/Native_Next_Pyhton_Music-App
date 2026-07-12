@@ -17,7 +17,7 @@ export default function EithFase(){
         {isOpen && (
             <div style={styles.overlay}>
                 <div style={styles.content}>
-                    <Fab style={{width: '30px', height: '30px', backgroundColor: 'red', color: 'white', fontFamily: 'fantasy', fontSize: '25px'}} onClick={closeModal}>x</Fab>
+                    <Fab style={{width: '30px', height: '30px', backgroundColor: 'darkorange', color: 'white', fontFamily: 'fantasy', fontSize: '25px'}} onClick={closeModal}>x</Fab>
                     <FaseOito/>
                 </div>
             </div>

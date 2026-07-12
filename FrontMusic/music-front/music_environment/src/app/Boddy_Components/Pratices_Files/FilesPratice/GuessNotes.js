@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const AppGame = () => {
   const [guess, setGuess] = useState('');
-  const [note, setNote] = useState(Math.floor(Math.random() * 10) + 1);
+  const [note, /*setNote*/] = useState(Math.floor(Math.random() * 10) + 1);
   const [message, setMessage] = useState('');
 
   const handleGuess = () => {

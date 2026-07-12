@@ -8,7 +8,7 @@ export default function BownViolinExercise({ children, detalhes }){
           return(
             <center>
             <div style={{width: '150px', backgroundColor: 'yellow', color: 'violet', fontSize: '5px'}}>
-                <h1>The violin's bown is to use from the rigth hand!!</h1>
+                <h1>The violins bown is to use from the rigth hand!!</h1>
             </div>
             </center>
           );
@@ -16,7 +16,7 @@ export default function BownViolinExercise({ children, detalhes }){
           return(
             <center>
             <div style={{width: '150px', backgroundColor: 'gold', color: 'purple', fontSize: '5px'}}>
-                <h1>The violin's bown will make the performance that you need to make different form's sounds!!</h1>
+                <h1>The violins bown will make the performance that you need to make different forms sounds!!</h1>
             </div>
             </center>
           );

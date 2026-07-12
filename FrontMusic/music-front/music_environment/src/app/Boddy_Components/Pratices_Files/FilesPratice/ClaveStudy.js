@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/jsx-key */
+/* eslint-disable @next/next/no-img-element */
 import { Grid, Fab } from "@mui/material";
 import { Button, Card, Divider } from "antd";
 import React, { useState, useRef } from "react";
@@ -1562,7 +1565,7 @@ const closeBequadroMod = () => {
             <Fab style={{fontSize: '50px', alignItems: 'center', color: 'cyan', backgroundColor: 'ActiveBorder'}} onClick={abrirSecModal}>𝄢</Fab>
             <Fab style={{fontSize: '50px', alignItems: 'center', color: 'cyan', backgroundColor: 'ActiveBorder'}} onClick={openiTercModal}>𝄡</Fab>
             <Modal isVisible={isModalVisiblePrinc} onClose={closeModal}>
-                <h2>SUN'S CLAVE</h2>
+                <h2>SUNS CLAVE</h2>
                 <div>
                   <center style={{margin: '15px'}}>
                   {somaSeminimas}
