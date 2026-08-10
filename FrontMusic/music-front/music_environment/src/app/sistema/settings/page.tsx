@@ -63,8 +63,7 @@ export default UserManagementMui;
 */
 
 import React, { useState } from 'react';
-import { PrimaryButton, Stack, MessageBar, MessageBarType } from "@fluentui/react";
-import { TextField } from '@mui/material';
+import { Button, Box, TextField, Typography, Alert, Stack } from '@mui/material';
 
 const UserManagementFluent = () => {
   const [step, setStep] = useState("authenticate");
@@ -83,34 +82,36 @@ const UserManagementFluent = () => {
   };
 
   return (
-    <Stack tokens={{ childrenGap: 30 }} style={{ maxWidth: 900, margin: "0 auto", padding: 70 }}>
+    <Box sx={{ maxWidth: 900, margin: "0 auto", padding: 8 }}>
       <h1>Gerenciamento de Usuário</h1>
-      {message && <MessageBar messageBarType={MessageBarType.info}>{message}</MessageBar>}
+      {message && <Alert severity="info">{message}</Alert>}
 
-      {step === "authenticate" && (
-        <>
-          <TextField label="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <PrimaryButton text="Autenticar" onClick={handleAuthentication} />
-        </>
-      )}
+      <Stack spacing={2} sx={{ marginTop: 2 }}>
+        {step === "authenticate" && (
+          <>
+            <TextField label="Digite seu email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <Button variant="contained" onClick={handleAuthentication}>Autenticar</Button>
+          </>
+        )}
 
-      {step === "options" && (
-        <>
-          <PrimaryButton text="Editar Dados" onClick={() => setStep("edit")} />
-          <PrimaryButton text="Excluir Conta" onClick={() => setMessage("Usuário excluído!")} />
-        </>
-      )}
+        {step === "options" && (
+          <>
+            <Button variant="contained" onClick={() => setStep("edit")}>Editar Dados</Button>
+            <Button variant="outlined" onClick={() => setMessage("Usuário excluído!")}>Excluir Conta</Button>
+          </>
+        )}
 
-      {step === "edit" && (
-        <>
-          <TextField label="Novo Nome de Usuário" value={username} onChange={(e) => setUsername(e.target.value)} />
-          <TextField label="Novo Email" value={newEmail} onChange={(e) => setNewEmail(e.target.value)} />
-          <TextField label="Nova Senha" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-          <PrimaryButton text="Salvar Alterações" onClick={() => setMessage("Dados atualizados!")} />
-          <PrimaryButton text="Voltar" onClick={() => setStep("options")} />
-        </>
-      )}
-    </Stack>
+        {step === "edit" && (
+          <>
+            <TextField label="Novo Nome de Usuário" value={username} onChange={(e) => setUsername(e.target.value)} />
+            <TextField label="Novo Email" value={newEmail} onChange={(e) => setNewEmail(e.target.value)} />
+            <TextField label="Nova Senha" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <Button variant="contained" onClick={() => setMessage("Dados atualizados!")}>Salvar Alterações</Button>
+            <Button variant="text" onClick={() => setStep("options")}>Voltar</Button>
+          </>
+        )}
+      </Stack>
+    </Box>
   );
 };
 
