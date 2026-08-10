@@ -25,6 +25,7 @@ cookiecutter==2.7.1
 cryptography==48.0.1
 dateparser==1.4.1
 distlib==0.3.8
+dj-database-url==2.1.0
 dj-stripe==2.8.4
 Django==5.0.1
 django-cors-headers==4.3.1
