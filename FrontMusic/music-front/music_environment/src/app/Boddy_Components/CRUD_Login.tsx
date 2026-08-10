@@ -10,7 +10,7 @@ interface User_Login{
 }
 
 const Login_CRUD: React.FC = () => {
-    const ApiUrl = 'http://127.0.0.1:8000/Urls/UserLog/';
+    const ApiUrl = 'https://app-django-musica.onrender.com/Urls/UserLog/';
     const [userData, setUserData] = useState<User_Login[]>([]);
     const dados = userData;
     const ShowInfo = () => {
@@ -74,7 +74,7 @@ const Login_CRUD: React.FC = () => {
 
       useEffect(() => {
         // Aqui você faz uma chamada à sua API para verificar se há registros
-        axios.get('http://127.0.0.1:8000/Urls/UserLog/')
+        axios.get('https://app-django-musica.onrender.com/Urls/UserLog/')
             .then(response => {
                 if (response.data.registros > 0) {
                     setRegistrosNaAPI(true);
