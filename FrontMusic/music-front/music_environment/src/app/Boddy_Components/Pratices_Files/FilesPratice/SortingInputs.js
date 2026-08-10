@@ -11,8 +11,6 @@ import 'react-toastify/dist/ReactToastify.css';*/
 import React, { useState } from 'react';
 import { Select,  MenuItem, FormControl, Divider } from '@mui/material';
 import { Button, Card, Input, Tooltip } from 'antd';
-import ReactTable from 'react-table-6';
-import 'react-table-6/react-table.css';
 import { useTable, useSortBy, useFilters } from 'react-table';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
@@ -229,37 +227,44 @@ const ChordGenerator = () => {
         scaleLA: '(LÁ) = LÁ, Mi, DÓ',
         scaleSI: '(SI) = SI, FÁ, RÉ'
       }];
-      const columns = [{
-        Headers: 'NameInstrument',
-        accessor: 'nameInstrument'
-      },{
-        Headers: 'Notes',
-        accessor: 'notes'
-      },{
-        Headers: 'ScaleDO',
-        accessor: 'scaleDO'
-      },{
-        Headers: 'ScaleRE',
-        accessor: 'scaleRE'
-      },{
-        Headers: 'ScaleMI',
-        accessor: 'scaleMI'
-      },{
-        Headers: 'ScaleFA',
-        accessor: 'scaleFA'
-      },{
-        Headers: 'ScaleSOL',
-        accessor: 'scaleSOL'
-      },{
-        Headers: 'ScaleLA',
-        accessor: 'scaleLA'
-      },{
-        Headers: 'ScaleSI',
-        accessor: 'scaleSI'
-      }];
+      
+      // Simple table component without ReactTable
+      const ScalesTable = ({ data }) => (
+        <table style={{backgroundColor: 'black', color: 'cyan', fontFamily: 'cursive', fontSize: '10px', width: '750px', border: 'solid 1px blue'}}>
+          <thead>
+            <tr>
+              <th>Name Instrument</th>
+              <th>Notes</th>
+              <th>Scale DO</th>
+              <th>Scale RE</th>
+              <th>Scale MI</th>
+              <th>Scale FA</th>
+              <th>Scale SOL</th>
+              <th>Scale LA</th>
+              <th>Scale SI</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((row, idx) => (
+              <tr key={idx}>
+                <td>{row.nameInstrument}</td>
+                <td>{row.notes}</td>
+                <td>{row.scaleDO}</td>
+                <td>{row.scaleRE}</td>
+                <td>{row.scaleMI}</td>
+                <td>{row.scaleFA}</td>
+                <td>{row.scaleSOL}</td>
+                <td>{row.scaleLA}</td>
+                <td>{row.scaleSI}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      );
+
       const datasForm = [{
         type: [
-            <FormControl style={{borderColor: 'cyan'}}>
+            <FormControl key="violin" style={{borderColor: 'cyan'}}>
             <h3 htmlFor="chord-select">Select a chord from the Violin:</h3>
                 <Select
                     id="chord-select"
@@ -280,7 +285,7 @@ const ChordGenerator = () => {
         ],
       },{
         type: [
-            <FormControl>
+            <FormControl key="viola">
             <h3 htmlFor="chord-select">Select a chord from the Viola:</h3>
                 <Select
                     id="chord-select"
@@ -300,7 +305,7 @@ const ChordGenerator = () => {
         ],
       },{
         type: [
-            <FormControl>
+            <FormControl key="cello">
             <h3 htmlFor="chord-select">Select an acord from the Cello:</h3>
                 <Select
                     id="chord-select"
@@ -319,33 +324,38 @@ const ChordGenerator = () => {
             </FormControl>
         ],
       }];
-      const dataColumns = [{
-        Headers: 'Type',
-        accessor: 'type'
-      }];
+
+      const FormTable = ({ data }) => (
+        <table style={{backgroundColor: 'gold', color: 'black', fontFamily: 'serif', fontSize: '20px', border: 'solid 1px blue'}}>
+          <thead>
+            <tr>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((row, idx) => (
+              <tr key={idx}>
+                <td>{row.type}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      );
+
     return (
       <div style={{paddingRight: '450px'}}>
         <Card style={{backgroundColor: 'lightsteelblue', color: 'grey'}}>
         <h1>Musical Chord Visualizer</h1>
-          <ReactTable
-                style={{backgroundColor: 'black', color: 'cyan', fontFamily: 'cursive', fontSize: '10px', width: '750px'}}
-                data={dataScales}
-                columns={columns}
-                defaultPageSize = {3}
-                pageSizeOptions = {[1,2,3]}
-            /><br/><Divider/><br/>
-            <ReactTable
-                style={{backgroundColor: 'gold', color: 'black', fontFamily: 'serif', fontSize: '20px'}}
-                data={datasForm}
-                columns={dataColumns}
-                defaultPageSize = {3}
-                pageSizeOptions = {[1,2,3]}
-            />
+          <ScalesTable data={dataScales} />
+          <br/>
+          <Divider/>
+          <br/>
+          <FormTable data={datasForm} />
         </Card>
       </div>
     );
   };
-
+ 
 
 const Metronome = () => {
     const [inputData, setInputData] = useState('');
