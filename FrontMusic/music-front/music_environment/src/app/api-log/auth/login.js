@@ -1,6 +1,5 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import db from "@/database";
 import User from "@/database/models/User";
 
 export default async function handler(req, res) {
@@ -18,7 +17,7 @@ export default async function handler(req, res) {
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: "1h" });
 
     return res.status(200).json({ token });
-  } catch (error) {
+  } catch {
     return res.status(500).json({ message: "Erro no servidor!" });
   }
 }
